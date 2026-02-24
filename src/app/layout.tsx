@@ -34,14 +34,19 @@ export default function RootLayout({
               <a href="/" className="text-sm font-bold tracking-tight text-zinc-100 hover:text-white">
                 OpenClaw Skills
               </a>
-              <a
-                href="https://github.com/BankrBot/openclaw-skills"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-xs text-zinc-500 hover:text-zinc-300 transition-colors"
-              >
-                GitHub
-              </a>
+              <div className="flex items-center gap-4">
+                <a href="/competitor-flags" className="text-xs text-zinc-500 hover:text-zinc-300 transition-colors">
+                  Competitor Flags
+                </a>
+                <a
+                  href="https://github.com/BankrBot/openclaw-skills"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-xs text-zinc-500 hover:text-zinc-300 transition-colors"
+                >
+                  GitHub
+                </a>
+              </div>
             </div>
           </header>
           <main>{children}</main>
